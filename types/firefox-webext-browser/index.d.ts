@@ -4488,7 +4488,7 @@ declare namespace browser.scripting {
         /**
          * A JavaScript function to inject. This function will be serialized, and then deserialized for injection. This means that any bound parameters and execution context will be lost. Exactly one of `files` and `func` must be specified.
          */
-        func?: () => void | undefined;
+        func?: () => unknown;
         /** Details specifying the target into which to inject the script. */
         target: InjectionTarget;
         world?: ExecutionWorld | undefined;
